@@ -15,8 +15,8 @@ $(document).ready(function(){
   count = usersArray.length-1;
   var counterIncrement = -1;
   var counter = setInterval(timer, 5000);
-
-
+  
+  //
   function timer(){
     count = count + counterIncrement;
     if(count == 0 || count == usersArray.length-1){
@@ -24,6 +24,7 @@ $(document).ready(function(){
     }
     updateUser(usersArray[count]);
   }
+  //console.log(usersArray);
 
 
 
